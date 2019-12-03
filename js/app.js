@@ -166,4 +166,37 @@ Tarea.prototype.mostrarInformacionTarea = function(){
 const tarea1 = new Tarea('Aprender Js y React', 'Urgente');
 console.log(tarea1);
 console.log(tarea1.mostrarInformacionTarea);
+
+****Object Destructuring > Como extraer los valores de un objeto
+
+ANTES>
+const aprendiendoJS = {
+    version:{
+        nueva: 'ES6+',
+        anterior: 'ES5'
+},    frameworks: ['React', 'VueJS', 'AngularJS']
+}
+console.log(aprendiendoJS);
+
+AHORA>
+let {version, frameworks}=aprendiendoJS;
+console.log(version);
+console.log(frameworks);
+
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
