@@ -301,4 +301,34 @@ const aplicarDescuento = new Promise((resolve, reject) => {
 
 aplicarDescuento.then(resultado => {
             console.log(resultado);
-        });*/
+        });
+
+****PROMISES con ajax       
+
+const descargarUsuarios = cantidad => new Promise((resolve, reject) => {
+
+
+    const api = `http://randomuser.me/api/?results=${cantidad}&nat=us`;
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', api, true);
+    xhr.onload = () => {
+        if (xhr.status === 200) {
+            resolve(JSON.parse(xhr.responseText).results);
+        } else {
+            reject(Error(xhr.statusText));
+        }
+        
+    }
+    xhr.onerror = (error) => reject(error);
+        xhr.send()
+});
+
+descargarUsuarios(10)
+    .then(
+        miembros => console.log(miembros),
+        error => console.error(
+            new Error('Hubo un error' + error)
+        )
+    )
+
+     */
