@@ -257,5 +257,31 @@ let frameworks = ['React', 'Laravel', 'Django'];
 
 let combinacion = [...lenguajes,...frameworks];
 console.log(combinacion);
-*/
 
+**** .Filter . find .reduce
+
+const personas = [
+    {nombre: 'Jimmy', edad:30, aprendiendo:'Js'},
+    {nombre: 'Jim', edad:24, aprendiendo:'PHP'},
+    {nombre: 'James', edad:26, aprendiendo:'React js'},
+]
+
+const mayores = personas.filter(persona => {
+    return persona.edad > 20;
+});
+
+
+const Jim = personas.find(persona => {
+    return persona.nombre === 'Jim';
+})
+console.log(Jim);
+
+let total = personas.reduce((edadTotal, persona) => {
+    return edadTotal + persona.edad;
+},0);
+
+
+
+
+
+*/
