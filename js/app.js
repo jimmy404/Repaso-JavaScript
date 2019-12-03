@@ -76,4 +76,25 @@ Se encuentra incluido como objeto global en JS.
 9- Object
     var x8 = {};
 
+    *** OBJETOS NATIVOS: STRING
+
+**** INSTANCIACION de una cadena/string:
+
+var daw = "Desarrollo de app web";
+var dam = 'Desarrollo de app multiples';
+var asir = "Administracion de 'Sistemas informaticos en red'";
+var smr = "Sistemas \"Multiples\" y plenos";
+var ciclos = new String("");
+
+**** Concatenar cadenas (cadenas moduladas);
+
+ciclos += "Hay 3 ciclos de Grado Superior: \n";
+ciclos += daw + ", " + dam + " y " + asir + "\n";
+ciclos += " y 1 ciclo de Grado Medio: \n";
+ciclos += smr;
+
+    alert (ciclos);
+
+** length > Sirve para ver la cantidad de caracteres.
+    alert("La longitud de la cadena ciclos es: "+ciclos.length);
 */
