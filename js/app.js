@@ -398,4 +398,56 @@ alert(actual);
  ** Ejemplo de calculo de horas
 fc.setMonth(fc.getMonth()+3);
 alert(fc.toString());
+
+**** ARRAY
+** Es una estructura de datos estatica
+** Permite almacenar objetos/elementos en una lista.
+** Almacena en una misma variable multiples valores: primitivos, objetos, etc.
+** Un objeto se referencia con un nombre.
+** Puede almacenar diferentes tipos de datos.
+
+var nombreArray=[<valores separados por comas>] > Estructura recomendada
+var animales = ["perro","gato","etc"];
+
+*** Como acceder a un elemento de un array
+    nombre array + [ <indice>]
+ej. var miAnimal=animales[0];
+
+mostrar todo el array utilizando instrucciones de mostrar (alert, document.write...)
+
+*** PROPIEDADES
+** length > Devuelve la longitud (N° de elementos) del Array
+    ej. document.write("<br> La longitud del array es: "+animales.length);
+*** Mostrar los valores del array uno a uno
+document.write("<br/><br/> Todos los elementos: ");
+for(var i = 0; i <animales.length;i++){
+    document.write("</br>"+animales[])
+}
+
+Ej final
+var animales = ["perro","gato","etc"];
+var miAnimal=animales[0];
+alert(animales);
+document.write(animales);
+document.write("<br> La longitud del array es: "+animales.length);
+document.write("<br/><br/> Todos los elementos: ");
+for(var i = 0; i <animales.length;i++){
+    document.write("</br>"+animales[i]);
+}
+
+
+*** METODO PARA SABER SI UNA VARIABLES ES UN ARRAY O NO
+** array.isArray> Devuelve true si es un objeto de tipo Array. 
+** typeof <nombre del array> nos devuelve object.
+    document.write("<br/> ¿Es un array?"+Array.isArray(animales));
+** <nombre array> instanceof Array: devuelve true si es un array
+    document.write("<br/>¿Seguro? "+animales instanceof Array);
+
+*** METODOS PARA MOSTRAR UN Array
+    toString() >Convierte el array a cadena
+    document.write("<br/> El array en tipo String es "+ animales.toString());
+
+** join(<separador>): convierte el array a cadena separado por un separador indicado por el parametro
+    document.write("<br/> El array con join es "+animales.join(" * "));
+
 */
