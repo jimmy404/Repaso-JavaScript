@@ -97,4 +97,52 @@ ciclos += smr;
 
 ** length > Sirve para ver la cantidad de caracteres.
     alert("La longitud de la cadena ciclos es: "+ciclos.length);
+
+**** Metodos de busqueda
+
+** charAt(<num>) > Devuelve el caracter de una posicion.
+    alert("El caracter 16 de la cadena de ciclos es : "+ciclos.charAt(16));
+** indexOf(<caracter>)> Devuelve la primera posicion de un caracter en la cadena.
+    alert("La primera aparicion de la letra a en ciclos es: "+ciclos.indexOf("a"));
+** lastIndexOf(<caracter>)> Devuelve la ultima posicion de un caracter en la cadena.
+    alert("La primera aparicion de la letra a en ciclos es: "+ciclos.lastIndexOf("a"));
+** search(<cadena|expresion>): buscar una cadena o expresion regular en otra cadena.
+    alert("Busca la cadena 'web' en la variable daw"+daw.search("web"));
+** match(<expreision regular>): Busca una expresion regular en otra cadena.
+
+**** COMPARACION:
+** compare(<cadena>): Devuelve -1(antes), 0(igual), 1(despues);
+    alert("Es daw menor que dam" +daw.localeCompare(dam));
+
+**** INCLUYE, EMPIEZA O TERMINA
+** include(<cadena>): Devuelve true si la cadena incluye el parametro.
+    alert("incluye 'app' daw "+daw.includes("app"));
+** starsWith(<cadena>): Devuelve true si la cadena empieza con el parametro
+    alert("incluye 'app' daw "+daw.includes("app"));
+****CONCATENACION Y REPETICION
+** concat(<cadena>):concatena a la cadena el parametro;
+    alert("Concatena daw con dam\n"+daw.concat(dam));
+** repeat(<numero>): repetir la cadena el numero de veces que aparece
+como parametro.
+    alert("Repetir daw\n "+daw.repeat(3));
+
+**** EXTRACCCION
+** slice(<posicion inicial>,<posicion final>): devuelve la cadena comprendida
+entre ambas posiciones.
+    alert("La cadena que hay entre el 0 y el 1 en daw es: "+daw.slice(0,1));
+** substring(<posicion inicial>,<posicion final>): devuelve la cadena comprendida
+entre ambas posiciones.
+Si pongo al reves, lo reordena(ej, 6-4 toma 4-6)
+    alert("La cadena que hay entre el 0 y el 1 en daw es: "+daw.substring(0,1));
+** substr(<posicion inicial>,<posicion final>): devuelve la cadena comprendida
+entre ambas posiciones.
+Si pongo al reves, lo reordena(ej, 6-4 toma 4-6)
+    alert("La cadena que hay entre el 5 y el 7 en daw es: "+daw.substr(5,7)); 
+** split(<caracter>,[opcional<numero de vceces>]) divide la cadena en un array
+de subcadenas separadas por el caracter del primer parametro
+    alert("La cadena daw separada por espacios es "+daw.split(" "));
+** trim(<cadena>): Extrae los caracteres de la cadena eliminando los espacios
+del principio y del final.
+    alert("La cadena sin espacios quedaria: \n"+"                  Hola, caracola             ".trim());
+
 */
