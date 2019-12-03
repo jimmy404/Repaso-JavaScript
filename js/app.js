@@ -353,5 +353,51 @@ console.log(tarea1.mostrar());
 console.log(tarea2.mostrar());
 console.log(tarea3.mostrar());
 console.log(tarea4.mostrar());
-*/
 
+****Heredando una clase
+**Ventaja: Crear una clase padre y heredar a una clase distinta y realizar pequeños ajustes.
+**super hace referencia al "padre", el resto es nuestra modificacion.
+
+
+class Tarea{
+    constructor(nombre, prioridad){
+        this.nombre = nombre;
+        this.prioridad=prioridad
+    }
+    mostrar (){
+        console.log(`${this.nombre} tiene una prioridad de ${this.prioridad}`);
+    }
+}
+
+
+class ComprasPendientes extends Tarea{
+    constructor(nombre, prioridad, cantidad){
+        super(nombre, prioridad);
+        this.cantidad= cantidad;
+    }
+    mostrar(){
+        super.mostrar();
+        console.log (`y la cantidad de ${this.cantidad}`);
+    }
+    hola(){
+        return 'hola';
+    }
+}
+
+
+let tarea1 = new Tarea('Aprender JS', 'Alta');
+let tarea2 = new Tarea('Aprender React', 'Alta');
+let tarea3 = new Tarea('Aprender Angular', 'Baja');
+let tarea4 = new Tarea('Aprender Vue', 'Media');
+
+
+//console.log(tarea1.mostrar());
+//console.log(tarea2.mostrar());
+//console.log(tarea3.mostrar());
+//console.log(t//area4.mostrar());
+
+let compra1 = new ComprasPendientes('Jabon', 'Urgente', 3);
+compra1.mostrar();
+console.log(compra1.hola());
+
+*/
