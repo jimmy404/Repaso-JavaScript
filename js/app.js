@@ -401,3 +401,4 @@ compra1.mostrar();
 console.log(compra1.hola());
 
 */
+
