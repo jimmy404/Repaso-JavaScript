@@ -248,7 +248,14 @@ const persona = {
 }
 
 console.log(Object.keys(persona));
+
+
+****SPREAD> Permite combinar 2 arreglos diferentes / crear un nuevo arreglo
+
+let lenguajes = ['Js','PHP','Python'];
+let frameworks = ['React', 'Laravel', 'Django'];
+
+let combinacion = [...lenguajes,...frameworks];
+console.log(combinacion);
 */
-
-
 
