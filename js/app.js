@@ -450,4 +450,44 @@ for(var i = 0; i <animales.length;i++){
 ** join(<separador>): convierte el array a cadena separado por un separador indicado por el parametro
     document.write("<br/> El array con join es "+animales.join(" * "));
 
+    
+    ****ARGUMENTOS
+    var arguments = 10;
+function miFunction(a,b,c,d){
+    if(arguments.length!==4){
+        console.error("La funcion necesita 4 parametros");
+        alert("La funcion necesita 4 parametros");
+return;
+    }
+    console.log(a+b+c+d);
+}
+
+miFunction(10,20,30,40);
+
+
+****Solucion a la sobrecarga de operadores
+
+
+
+function crearProducto(nombre, precio){
+    nombre=nombre||"Sin nombre";
+    precio=precio||0;
+    console.log("producto: ", nombre,"Precio :", precio); 
+}
+
+
+function crearProducto100(nombre){
+    crearProducto(nombre,100);
+}
+
+function crearProductoCamisa(precio){
+    crearProducto("Camisa",precio);
+}
+
+crearProducto("Lapiz");
+crearProducto100("Corrector");
+crearProductoCamisa(75);
+
+
+
 */
