@@ -145,4 +145,13 @@ de subcadenas separadas por el caracter del primer parametro
 del principio y del final.
     alert("La cadena sin espacios quedaria: \n"+"                  Hola, caracola             ".trim());
 
+    **** MAYUSCULAS Y MINUSCULAS
+** toLowerCase(): Devuelve la cadena en minusculas.
+    alert(daw.toLowerCase());
+** toUpperCase(): Devuelve la cadena en mayusculas.
+    alert(daw.toUpperCase());
+
+**** Metodos especiales
+** toString: devuelve el valor del objeto String
+** valorOf: devuelve el valor primitivo del objeto.
 */
