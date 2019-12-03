@@ -285,4 +285,117 @@ var j = 123;
     ej.
 var pi = Math.PI;
     alert("El numero PI vale: "+pi);
+
+    **** METODOS MAS COMUNES
+random()> Devuelve un numero aleatorio entre 0 y 1;
+ej.
+alert("Numero aleatorio: "+Math.random());
+
+** max (<lista de valores>) // min(<lista de valores>)
+
+MAX
+ej.
+alert("Maximo de valores: "+Math.max(1,5,8,16));
+
+MIN
+alert("Minimo de valores: "+Math.min(1,5,8,16));
+
+** round(<numero>): redondeo al alza o a la baja.
+    var a=4.3;
+    var b=4.7;
+    var c=4.5;
+    alert("Redondeo de "+b+" es: "+Math.round(c));
+
+** ceil(<numero>): Redondea siempre al alza.
+    var a=4.3;
+    var b=4.7;
+    var c=4.5;
+    alert("Redondeo de "+a+" es: "+Math.ceil(a));
+
+** floor(<numero>): Redondea siempre al baja.
+    var a=4.3;
+    var b=4.7;
+    var c=4.5;
+    alert("Redondeo de "+b+" es: "+Math.floor(b));
+
+** Numero aleatorio entre 0 y 10
+ej.
+var aleatorio=Math.floor(Math.random()*11);
+     alert("Aleatorio es: "+aleatorio);
+
+** Metodo para extraer una potencia
+* pow(<base><exponente>)> Devuelve el valor de la potencia.
+   ej.
+    alert("La potencia de 3 al cuadrado es: "+Math.pow(3,2));
+
+** sqrt(numero)> Devuelve la raiz del numero
+alert("Raiz de 36 es: "+Math.sqrt(36));
+
+** abs (<numero>)> Devuelve el valor absoluto de un numero
+    alert ("Valor absoluto de -5: "+Math.abs(-5));
+
+** Metodos TRIGONOMETRICOS:
+    sin, cos, tan, asin, atan, atan2
+
+**** OBJETO NATIVO Date> Permite almacenar fechas y horas.
+** Meses comienzan en 0 y los dias de la semana tambien.
+** 0 Domingo, 1 Lunes ...
+
+var actual = new Date();
+alert(actual);
+
+** Creacion de fecha con cadenas
+    var d1 = new Date("Wed Mar 25 2015 09:23:22 GMT +0011 (W. Europe Standard Time)");
+** Ignora si el dia esta mal.
+    var d2 = new Date("October 12,2016 10:30:00");
+    var d3 = new Date("January 25 2015");
+    var d4 = new Date ("Jan 25 2015");//tambien> "25 Jan 2015"
+
+** Las comas se ignoran
+    var d5 = new Date("2016-05-12T12:34:25");
+    var d6=new Date("2016-05-12"); // YYYY-MM-DD
+    var d7=new Date("2016/05/12");// YYYY-MM-DD o DD/MM/YYYY
+    var d8=new Date("2016-05");// El dia se sustituye por 1
+    var d9=new Date("2016-05-12");// El dia y el mes se sustituyen por 1
+
+ ** OJO no poner los dias con CERO sin el CERO. Ej. Octubre>10.
+
+ *** Creacion de fecha con milisegundos
+ var dms=new Date(86400000);
+    alert(dms);
+
+ *** Creacion de fecha con numeros
+ var fechaLargo = new Date(2015,11,10,14,30,25);
+ var fechaCorto=new Date(2015,11,10);
+    alert("Fecha largo: "+fechaLargo+"Fecha corto: "+fechaCorto);
+
+ var fecha = new Date();
+    alert("Fecha: "+d);
+    alert("toString: "+d.toString());
+    alert("toUTCString: "+d.toUTCString());
+    alert("toDateString: "+d.toDateString());
+    
+ *** Metodos para trabajar con Date
+ ** Metodos GET > Permite extraer un campo en particular de la fecha.
+ var fc = new Date ("October 1, 2016 10:30:20");
+ alert(fc.getDay()+" "+fc.getDate()+"/"+fc.getMonth()+"/"fc.getFullYear());
+ alert(fc.getHours()+":"+fc.getMinutes()+":"+fc.getSeconds()+":"+fc.getMilliseconds());
+ alert("Ms desde 1/1/1970: "+fc.getTime());
+
+
+ ** Metodos SET
+ var fc = new Date ("October 1, 2016 10:30:20");
+
+ fc.setDate(31);
+ fc.setMonth(11);
+ fc.setFullYear(2031);
+ fc.setHours(23);
+ fc.setMinutes(59);
+ fc.setSeconds(59);
+ fc.setMilliseconds(59);
+ alert(fc.toString());
+
+ ** Ejemplo de calculo de horas
+fc.setMonth(fc.getMonth()+3);
+alert(fc.toString());
 */
