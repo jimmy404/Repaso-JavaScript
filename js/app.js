@@ -202,7 +202,7 @@ const metallica = { banda, genero, canciones};
 
 
 ****Funciones en un objeto
-*/
+
 const persona = {
     nombre : 'Jimmy',
     trabajo : 'Dev app',
@@ -214,10 +214,41 @@ const persona = {
 }
 persona.mostrarInformacion();
 
+****Arreglos, Map y Object.keys
+Arreglos> almacenan informacion
 
 
+const carrito = ['Producto 1', 'Producto 2', 'Producto 3'];
+console.log(carrito);
 
+const appContenedor = document.querySelector('#app');
 
+let html= '';
+carrito.forEach(producto =>{
+    html += `<li>${producto}</li>`;
+})
+
+appContenedor.innerHTML=html;
+
+**MAP> Conserva el arreglo original y devuelve uno nuevo
+
+const carrito = ['Producto 1', 'Producto 2', 'Producto 3'];
+console.log(carrito);
+
+carrito.map(producto =>{
+    return 'El producto es ' + producto;
+});
+
+**Object.keys
+
+const persona = {
+    nombre : 'Jimmy',
+    trabajo : 'Dev app',
+    edad: 30
+}
+
+console.log(Object.keys(persona));
+*/
 
 
 
