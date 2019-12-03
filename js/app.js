@@ -150,10 +150,15 @@ console.log (persona.nombre) /Ó/ console.log (persona['nombre']);
 
 
 
-
-
-
-
+function Tarea(nombre, urgencia){
+    this.nombre = nombre;
+    this.urgencia = urgencia;
+}
+const tarea1 = new Tarea('Aprender Js y React', 'Urgente');
+console.log(tarea1);
+console.log(tarea1.nombre);
 
 
 */
+
+
