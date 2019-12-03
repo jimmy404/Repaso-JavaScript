@@ -219,4 +219,50 @@ var neginf = Number.NEGATIVE_INFINITY; alert("-Inf="+neginf);
 var posinf = Number.POSITIVE_INFINITY; alert("+Inf="+posinf);
 var numnan = Number.NaN; alert("NaN="+numnan);
 
+
+**** METODOS
+*** Se escriben en minuscula despues del nombre de la variable.
+** toFixed(<num decimales>): Cadena con el numero especifico de decimales indicado.
+var x = 9.8765;
+alert(x.toFixed(0));
+alert(x.toFixed(2));
+alert(x.toFixed(6));
+
+** toPrecision(<num cifras>) Cadena con el numero especifico de cifras indicado.
+var y = 9.8765;
+alert(y.toFixed()); > Sin el cero, muestra el numero.
+alert(y.toFixed(2));
+alert(y.toFixed(6));
+
+** toExponential: Cadena con el numero redondeado a notacion cientifica.
+
+var y = 9.8765;
+alert(y.toPrecision());
+alert(y.toPrecision(2));
+alert(y.toPrecision(6));
+alert(y.toExponential(6));
+
+** valueOf: Devuelve el valor primitivo de un objeto.
+
+** toString: Devuelve la cadena de un numero.
+
+var j = 123;
+    alert(j.toString());
+    alert((123).toString());
+    alert((123+7).toString());
+
+**** METODOS GLOBALES PARA CONVERTIR VARIABLES EN NUMEROS
+
+    alert (Number(true)); Devuelve 1
+    alert (Number(false)); Devuelve 0
+    alert (Number(new Date())); Devuelve el numero de milisegundos desde el dia 01/01/1970
+    alert (Number("10")); Devuelve el numero de la cadena.
+    alert (Number("casa")); Devuelve NaN
+
+** parseInt()> Muestra enteros / parseFloat()> Muestra tmb decimales
+    alert(parseInt("10.6")) > 10
+    alert(parseFloat("10.6")) > 10.6
+    alert(parseFloat("10 6")) > 10 (Lee hasta el espacio, no toma lo demas)
+    alert(parseInt("10 6")) > 10 (Lee hasta el espacio, no toma lo demas)
+
 */
