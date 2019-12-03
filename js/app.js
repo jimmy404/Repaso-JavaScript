@@ -199,12 +199,20 @@ const metallica = {
 
 AHORA>
 const metallica = { banda, genero, canciones};
+
+
+****Funciones en un objeto
 */
-
-
-
-
-
+const persona = {
+    nombre : 'Jimmy',
+    trabajo : 'Dev app',
+    edad: 30
+    musicRock: true,
+    mostrarInformacion: function(){
+        console.log(`${this.nombre} es ${this.trabajo} y su edad es ${this.edad}`)
+    }
+}
+persona.mostrarInformacion();
 
 
 
