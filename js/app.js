@@ -68,9 +68,42 @@ AHORA> let html = `
         `;
 
 
-        
+****FUNCIONES
+
+**Function Declaration
+
+function saludar () {
+    console.log('Bienvenido ' + nombre);
+}
+saludar ('Jimmy'); > asi se la llama. // saludar ()> Funcion anonima.
+saludar ('James');
+saludar ('Jim');
+
+**Function expresion
+const cliente = function(nombreCliente){
+    console.log('Mostrando datos del cliente: ) + nombre cliente;
+}
+client('Jimmy');
+
+
+client('Jimmy');> Si va antes tira error por no estar declarada.
+const cliente = function(nombreCliente){
+    console.log('Mostrando datos del cliente: ) + nombre cliente;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 */
-
-
