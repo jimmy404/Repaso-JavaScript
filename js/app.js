@@ -148,17 +148,22 @@ const persona = {
 
 console.log (persona.nombre) /Ó/ console.log (persona['nombre']);
 
-
+**Object constructor
 
 function Tarea(nombre, urgencia){
     this.nombre = nombre;
     this.urgencia = urgencia;
 }
+
+**** Prototype
+
+Tarea.prototype.mostrarInformacionTarea = function(){
+    return `La tarea ${tarea} tiene una prioridad de ${prioridad}`;
+}
+
+
+
 const tarea1 = new Tarea('Aprender Js y React', 'Urgente');
 console.log(tarea1);
-console.log(tarea1.nombre);
-
-
+console.log(tarea1.mostrarInformacionTarea);
 */
-
-
