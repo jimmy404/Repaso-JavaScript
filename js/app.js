@@ -283,5 +283,22 @@ let total = personas.reduce((edadTotal, persona) => {
 
 
 
+****PROMISES
+> Manejar que el codigo funcione o falle con el "llamado"
 
-*/
+
+const aplicarDescuento = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let descuento = false;
+
+        if (descuento) {
+            resolve('Descuento aplicado');
+        } else {
+            reject('No se pudo aplicar el descuento')
+        }
+    }, 3000);
+});
+
+aplicarDescuento.then(resultado => {
+            console.log(resultado);
+        });*/
