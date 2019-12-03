@@ -154,4 +154,47 @@ del principio y del final.
 **** Metodos especiales
 ** toString: devuelve el valor del objeto String
 ** valorOf: devuelve el valor primitivo del objeto.
+
+
+//**** OBJETOS NATIVOS > NUMBER
+//Solo hay un tipo de dato numerico.
+// Cambio de base entre numeros (pasar numeros de una base a otra)
+
+**** ININITO Y -INFINITO
+***Infinito: N° mas grande que puede almacenarse en una variable.
+*** ¿Como lo sabemos, como se llega?
+** ej.
+var inf = 2;
+    while(inf!=Infinity){
+    alert(inf);
+    inf=inf*inf;
+}
+** ej.
+var div1=2, div2=0;
+    alert("Division 2/0="+2/0);
+    alert("Division -2=0"+-2/0);
+** ej.
+var div1=2, div2=0;
+    lert("Division 2/0="+2/0);
+    alert("Division -2=0"+-2/0);
+    alert("Typeof: "+(div1/div2));
+
+
+**** NaN
+var atipico=100/"casa";
+    alert("100/'casa'="+atipico);
+
+** ¿como se si es NaN o no?
+
+var atipico=100/"casa";
+    alert("100/'casa'="+atipico);
+    alert("100/'10'="+atipico);
+    alert("¿Es un NaN atipico? "+isNaN(atipico));
+
+** ¿De que tipo es NaN?
+var atipico=100/"casa";
+    alert("100/'casa'="+atipico);
+    alert("100/'10'="+atipico);
+    alert("¿Es un NaN atipico? "+isNaN(atipico));
+    alert("¿De que tipo es NaN? "+typeof(atipico));
 */
