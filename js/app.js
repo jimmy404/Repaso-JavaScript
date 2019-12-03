@@ -265,4 +265,24 @@ var j = 123;
     alert(parseFloat("10 6")) > 10 (Lee hasta el espacio, no toma lo demas)
     alert(parseInt("10 6")) > 10 (Lee hasta el espacio, no toma lo demas)
 
+    
+**** OBJETO Math 
+*** Permite realizar operaciones matematicas.
+*** NO ES UN CONSTRUCTOR.
+*** Escribimos el objeto seguido de . y la propiedad del metodo que utilizemos.
+    ej. var x = new Math(); NO
+
+    PROPIEDADES
+    E, 
+    LN2 (Logaritmo neperiano de 2)
+    LN10 (Logaritmo neperiano de 10)
+    LOG2E (logaritmo de 2 E)
+    LOG10E (logaritmo de 10 E)
+    PI,
+    SQRT1_2 (Raiz cuadrada de un medio)
+    SQRT2 (Raiz cuadrada de dos)
+
+    ej.
+var pi = Math.PI;
+    alert("El numero PI vale: "+pi);
 */
