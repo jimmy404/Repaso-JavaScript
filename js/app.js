@@ -106,6 +106,22 @@ const actividad = fuinction (nombre = 'Jimmy', actividad 'Dev app'){
 
 }
 
+**** ARROW Functions
+
+let viajando = function (destino){
+    return `Viajando a la ciudad de: ${destino}`;
+}
+let viaje;
+viaje = viajando ('Paris');
+viaje = viajando ('Londres');
+viaje = viajando ('Barcelona');
+
+console.log(viaje);
+
+// Se reemplaza  "function" por la flecha. (pasaria a la derecha la "funcion")
+let viajando = (destino) => { // si es uno solo, sin parentesis, con 2 o mas arg. van los parentesis
+    return `Viajando a la ciudad de: ${destino}`;
+}
 
 
 
