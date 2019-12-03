@@ -205,12 +205,11 @@ es conveniente usar los datos PRIMITIVOS.
 
 
 var num =123;
-       var num2 = new Number(123);
-       alert("num "+typeof(num));
-       alert("num2 "+typeof(num2));
+        var num2 = new Number(123);
+        alert("num "+typeof(num));
+        alert("num2 "+typeof(num2));
 
-       alert("num===num2"+(num===num2)); > Mismo valor/diferente tipo
-       
+        alert("num===num2"+(num===num2)); > Mismo valor/diferente tipo
 
 **** PROPIEDADES
 var maximo = Number.MAX_VALUE; alert("Maximo="+maximo);
@@ -265,15 +264,14 @@ var j = 123;
     alert(parseFloat("10 6")) > 10 (Lee hasta el espacio, no toma lo demas)
     alert(parseInt("10 6")) > 10 (Lee hasta el espacio, no toma lo demas)
 
-    
-**** OBJETO Math 
+**** OBJETO Math
 *** Permite realizar operaciones matematicas.
 *** NO ES UN CONSTRUCTOR.
 *** Escribimos el objeto seguido de . y la propiedad del metodo que utilizemos.
     ej. var x = new Math(); NO
 
     PROPIEDADES
-    E, 
+    E,
     LN2 (Logaritmo neperiano de 2)
     LN10 (Logaritmo neperiano de 10)
     LOG2E (logaritmo de 2 E)
@@ -321,11 +319,11 @@ alert("Minimo de valores: "+Math.min(1,5,8,16));
 ** Numero aleatorio entre 0 y 10
 ej.
 var aleatorio=Math.floor(Math.random()*11);
-     alert("Aleatorio es: "+aleatorio);
+    alert("Aleatorio es: "+aleatorio);
 
 ** Metodo para extraer una potencia
 * pow(<base><exponente>)> Devuelve el valor de la potencia.
-   ej.
+ej.
     alert("La potencia de 3 al cuadrado es: "+Math.pow(3,2));
 
 ** sqrt(numero)> Devuelve la raiz del numero
@@ -361,39 +359,39 @@ alert(actual);
  ** OJO no poner los dias con CERO sin el CERO. Ej. Octubre>10.
 
  *** Creacion de fecha con milisegundos
- var dms=new Date(86400000);
+var dms=new Date(86400000);
     alert(dms);
 
  *** Creacion de fecha con numeros
- var fechaLargo = new Date(2015,11,10,14,30,25);
- var fechaCorto=new Date(2015,11,10);
+var fechaLargo = new Date(2015,11,10,14,30,25);
+var fechaCorto=new Date(2015,11,10);
     alert("Fecha largo: "+fechaLargo+"Fecha corto: "+fechaCorto);
 
- var fecha = new Date();
+var fecha = new Date();
     alert("Fecha: "+d);
     alert("toString: "+d.toString());
     alert("toUTCString: "+d.toUTCString());
     alert("toDateString: "+d.toDateString());
-    
+
  *** Metodos para trabajar con Date
  ** Metodos GET > Permite extraer un campo en particular de la fecha.
- var fc = new Date ("October 1, 2016 10:30:20");
- alert(fc.getDay()+" "+fc.getDate()+"/"+fc.getMonth()+"/"fc.getFullYear());
- alert(fc.getHours()+":"+fc.getMinutes()+":"+fc.getSeconds()+":"+fc.getMilliseconds());
- alert("Ms desde 1/1/1970: "+fc.getTime());
+var fc = new Date ("October 1, 2016 10:30:20");
+alert(fc.getDay()+" "+fc.getDate()+"/"+fc.getMonth()+"/"fc.getFullYear());
+alert(fc.getHours()+":"+fc.getMinutes()+":"+fc.getSeconds()+":"+fc.getMilliseconds());
+alert("Ms desde 1/1/1970: "+fc.getTime());
 
 
  ** Metodos SET
- var fc = new Date ("October 1, 2016 10:30:20");
+var fc = new Date ("October 1, 2016 10:30:20");
 
- fc.setDate(31);
- fc.setMonth(11);
- fc.setFullYear(2031);
- fc.setHours(23);
- fc.setMinutes(59);
- fc.setSeconds(59);
- fc.setMilliseconds(59);
- alert(fc.toString());
+fc.setDate(31);
+fc.setMonth(11);
+fc.setFullYear(2031);
+fc.setHours(23);
+fc.setMinutes(59);
+fc.setSeconds(59);
+fc.setMilliseconds(59);
+alert(fc.toString());
 
  ** Ejemplo de calculo de horas
 fc.setMonth(fc.getMonth()+3);
@@ -450,7 +448,7 @@ for(var i = 0; i <animales.length;i++){
 ** join(<separador>): convierte el array a cadena separado por un separador indicado por el parametro
     document.write("<br/> El array con join es "+animales.join(" * "));
 
-    
+
     ****ARGUMENTOS
     var arguments = 10;
 function miFunction(a,b,c,d){
@@ -472,7 +470,7 @@ miFunction(10,20,30,40);
 function crearProducto(nombre, precio){
     nombre=nombre||"Sin nombre";
     precio=precio||0;
-    console.log("producto: ", nombre,"Precio :", precio); 
+    console.log("producto: ", nombre,"Precio :", precio);
 }
 
 
@@ -499,10 +497,10 @@ for(var numero=1;numero<=3; numero ++){
 arr.push(
     (function(numero){
         return  function(){
-   console.log(numero);
- }
-          })(numero)
-   
+console.log(numero);
+}
+    })(numero)
+
         );
     }
 
