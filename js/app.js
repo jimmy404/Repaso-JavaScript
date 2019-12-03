@@ -197,4 +197,26 @@ var atipico=100/"casa";
     alert("100/'10'="+atipico);
     alert("¿Es un NaN atipico? "+isNaN(atipico));
     alert("¿De que tipo es NaN? "+typeof(atipico));
+
+
+**** NUMEROS COMO OBJETOS
+** Es recomendable no usar Number (es lento en la ejecucion/puede dar errores),
+es conveniente usar los datos PRIMITIVOS.
+
+
+var num =123;
+       var num2 = new Number(123);
+       alert("num "+typeof(num));
+       alert("num2 "+typeof(num2));
+
+       alert("num===num2"+(num===num2)); > Mismo valor/diferente tipo
+       
+
+**** PROPIEDADES
+var maximo = Number.MAX_VALUE; alert("Maximo="+maximo);
+var minimo = Number.MIN_VALUE; alert("Minimo="+minimo);
+var neginf = Number.NEGATIVE_INFINITY; alert("-Inf="+neginf);
+var posinf = Number.POSITIVE_INFINITY; alert("+Inf="+posinf);
+var numnan = Number.NaN; alert("NaN="+numnan);
+
 */
