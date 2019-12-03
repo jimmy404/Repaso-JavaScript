@@ -125,8 +125,28 @@ let viajando = (destino) => { // si es uno solo, sin parentesis, con 2 o mas arg
 
 
 
+**** Objetos
 
 
+**Object literal
+
+let persona = 'Jimmy';
+let profesion = 'Dev app';
+
+console.log(persona);
+console.log(profesion);
+
+// Para no tener 2 variables se usan los objetos:
+
+const persona = {
+    nombre: 'Jimmy',
+    profesion: 'Dev app'
+}
+ let nombrePersona = 'Jimmy'
+
+// Para acceder a datos de los objetos de forma individual:
+
+console.log (persona.nombre) /Ó/ console.log (persona['nombre']);
 
 
 
