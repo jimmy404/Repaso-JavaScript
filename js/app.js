@@ -91,6 +91,20 @@ const cliente = function(nombreCliente){
     console.log('Mostrando datos del cliente: ) + nombre cliente;
 }
 
+****Parametros por default en las funciones
+
+function actividad(nombre,actividad){
+    console.log(`La persona ${nombre}, esta realizando la actividad ${actividad}`)
+}
+actividad('Jimmy', 'Aprender Js');
+actividad('Jim', 'Dev app');
+actividad('James'); > Sin segundo parametro, el primero se REESCRIBE pero el segundo NO.
+
+
+const actividad = fuinction (nombre = 'Jimmy', actividad 'Dev app'){
+        console.log(`La persona ${nombre}, esta realizando la actividad ${actividad}`)
+
+}
 
 
 
