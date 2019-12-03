@@ -30,4 +30,14 @@ para definir datos, es mejor usar los datos primitivos.
 - History  > Corresponde al modelo de objetos de "Navegador"
 - Document > Corresponde al modelo de objetos de "documento" > Para
 documentos html dentro del documento.
+
+**** Definicion de OBJETO:
+> var programadora = {nombre:"Ada", apellido:"Lovelace",ano:1815};
+> ¿Que contiene un Objeto?
+** PROPIEDADES: Se definen en modo nombre: Valor. (nombre, apellido, ano)
+** METODOS: Acciones que se pueden ejecutar sobre un objeto.
+** Las variables contienen valores, pero unicos por cada variable.
+** los OBJETOS pueden contener uno o mas valores, se escriben en 
+modo/clave valor y ser primitivos-objetos-funciones.
+
 */
