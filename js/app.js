@@ -183,10 +183,23 @@ let {version, frameworks}=aprendiendoJS;
 console.log(version);
 console.log(frameworks);
 
+
+****Object literal enchancement > Coloca valores juntos
+
+const band = 'Metallica';
+const genero = 'Heavy Metal';
+const canciones = ['Master of Puppets', 'Seek & Destroy', 'Enter Sandman'];
+
+ANTES> 
+const metallica = {
+    banda : banda,
+    genero : genero,
+    canciones: canciones
+}
+
+AHORA>
+const metallica = { banda, genero, canciones};
 */
-
-
-
 
 
 
