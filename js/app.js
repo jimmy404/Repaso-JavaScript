@@ -401,4 +401,5 @@ compra1.mostrar();
 console.log(compra1.hola());
 
 */
-
+import { nombreTarea } from './tarea.js';
+console.log(nombreTarea);
