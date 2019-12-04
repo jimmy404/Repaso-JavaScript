@@ -1,6 +1,14 @@
 export const nombreTarea = 'Pasear al perro';
 
+//Exportar funcion
 
+export const crearTarea = (tarea, urgencia) => {
+    return `La tarea ${tarea} tiene una urgencia de ${urgencia}`;
+}
+
+export const tareaCompletada = () => {
+    console.log('La tarea se completo');
+}
 class Tarea{
     constructor(nombre, prioridad){
         this.nombre = nombre;
