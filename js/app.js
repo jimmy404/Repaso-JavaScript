@@ -409,12 +409,20 @@ const tarea1 = crearTarea('Pasear perro','Media');
 console.log(tarea1);
 tareaCompletada();
 
-*/
+****Exportando Clases que heredan otras
 
 import Tarea from './tarea.js';
+import ComprasPendientes from './compras.js';
+
+
 
 const tarea1 = new Tarea('Aprender JS', 'Urgente');
 console.log(tarea1);
 
 tarea1.mostrar();
 
+const cmpra1 = new ComprasPendientes('Pizza', 'Urgente', 2);
+console.log(compra1);
+
+compra1.mostrar();
+compra1.hola();*/
