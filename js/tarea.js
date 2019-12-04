@@ -1,4 +1,4 @@
-export const nombreTarea = 'Pasear al perro';
+/*export const nombreTarea = 'Pasear al perro';
 
 //Exportar funcion
 
@@ -49,3 +49,17 @@ class ComprasPendientes extends Tarea{
 let compra1 = new ComprasPendientes('Jabon', 'Urgente', 3);
 //compra1.mostrar();
 //console.log(compra1.hola());
+
+
+Exportar clase
+
+export default class Tarea {
+constructor(nombre, prioridad) {
+    this.nombre = nombre;
+    this.prioridad = prioridad
+}
+mostrar() {
+    console.log(`${this.nombre} tiene una prioridad de ${this.prioridad}`);
+}}
+
+*/
